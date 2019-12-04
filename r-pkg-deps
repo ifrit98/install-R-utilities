@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+
+sudo apt update
+sudo apt upgrade
+
+wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.5025-amd64.deb
+sudo rstudio-1.2.5025-amd64.deb
+
+sudo apt install libcurl4-openssl-dev libxml2-dev libssl-dev
+
+sudo ./install-rpkgs.R
+
