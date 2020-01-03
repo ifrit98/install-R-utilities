@@ -6,10 +6,13 @@ sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic
 sudo apt update
 sudo apt upgrade
 
-wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.5025-amd64.deb
-sudo rstudio-1.2.5025-amd64.deb
+wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.5036-amd64.deb
+sudo rstudio-1.2.5036-amd64.deb
 
 sudo apt install libcurl4-openssl-dev libxml2-dev libssl-dev
 
 sudo ./install-rpkgs.R
+
+# libclang-3.8-dev* libclang-common-3.8-dev* libclang-dev* libclang1-3.8*
+# libobjc-5-dev* libobjc4* rstudio*
 

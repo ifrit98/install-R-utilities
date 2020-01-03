@@ -1,6 +1,8 @@
 #!/usr/bin/Rscript
 
-#install.packages(c("curl", "xml2", "httr"))
+system("sudo apt install libcurl4-openssl-dev libxml2-dev libssl-dev")
+
+install.packages(c("curl", "xml2", "httr"))
 install.packages("devtools")
 install.packages(c("magrittr", "zeallot", "listarrays"))
 
