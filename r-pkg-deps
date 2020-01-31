@@ -1,13 +1,16 @@
 #!/bin/bash
 
+# https://www.digitalocean.com/community/tutorials/how-to-install-r-on-ubuntu-18-04-quickstart
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 
-sudo apt update
-sudo apt upgrade
 
-wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.5036-amd64.deb
-sudo rstudio-1.2.5036-amd64.deb
+sudo apt update
+sudo apt install --upgrade r-base
+
+# wget https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.2.5036-amd64.deb
+wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5033-amd64.deb
+sudo rstudio-1.2.5033-amd64.deb
 
 sudo apt install libcurl4-openssl-dev libxml2-dev libssl-dev
 
