@@ -15,4 +15,4 @@ install.packages("tidyverse")
 
 install.packages(c("qs", "tfdatasets", "signal", "oce", "import", "manipulate"))
 
-install.packages(c("pryr", "yardstick", "shiny"))
+install.packages(c("pryr", "yardstick", "shiny", "lobstr", "yasp"))
