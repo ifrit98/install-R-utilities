@@ -1,4 +1,4 @@
-#/usr/bin/Rscript --vanilla
+#!/usr/bin/Rscript --vanilla
 
 ## load docopt and remotes (or devtools) from CRAN
 suppressMessages(library(docopt))
